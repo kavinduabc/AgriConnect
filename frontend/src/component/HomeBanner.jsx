@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HomeBanner = () => {
   return (
@@ -21,9 +22,10 @@ const HomeBanner = () => {
 
       
       <div className="flex gap-4">
+        <Link to="/signupfarmer" className='mr-4'>
         <button className="bg-green-700 text-white px-6 py-2 text-lg rounded hover:bg-green-800 transition">
           Start as Farmer
-        </button>
+        </button></Link>
         <button className="border border-green-700 text-green-700 px-6 py-2 text-lg rounded hover:bg-green-100 transition">
           Join as Buyer
         </button>
