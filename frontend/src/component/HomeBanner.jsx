@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const HomeBanner = () => {
   return (
-    <div className="bg-green-50 min-h-[85vh] flex flex-col items-center justify-center text-center px-4">
+    <div className=" min-h-[85vh] flex flex-col items-center justify-center text-center px-4">
      
       <h1 className="text-5xl md:text-6xl font-bold text-green-800 mb-3">
         Empowering Sri Lankan Farmers
