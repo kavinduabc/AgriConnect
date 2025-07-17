@@ -33,8 +33,8 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-green-50">
-      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+    <div className="flex justify-center items-center min-h-screen ">
+      <div className=" p-8 rounded-2xl shadow-xl w-full max-w-md">
         <h1 className="text-2xl font-bold text-green-700 mb-6 text-center">
           Farmer Signup
         </h1>

@@ -1,19 +1,22 @@
 html, body, #root {
   height: 100%;
   margin: 0;
+   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-image: url('/tea2.jpg.jpg');
+  background-image: url('/paddy2.jpg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .content-overlay {
-  background: rgba(220, 244, 215, 0.7);
-  border-radius: 1px;
+  background: rgba(219, 233, 216, 0.7); 
+  border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-  /* padding: 2rem; */
+
   max-width: full;
   margin:  auto;
 }
+
+
