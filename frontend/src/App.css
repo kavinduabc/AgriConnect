@@ -13,7 +13,7 @@ body {
 .content-overlay {
   background: rgba(219, 233, 216, 0.7); 
   border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 24px rgba(8, 8, 8, 0.2);
 
   max-width: full;
   margin:  auto;

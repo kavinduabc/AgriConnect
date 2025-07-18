@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Signup from "./pages/SignUp/Signup"
 
 import './App.css'
+import Footer from "./component/Footer"
 
 function App() {
  
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/signupFarmer" element={<Signup/>} />
        </Routes>
+       <hr className="text-green-50" />
+       <Footer/>
     </div>
     </>
   )
