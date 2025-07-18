@@ -6,6 +6,7 @@ const farmingOptions = ["Paddy", "Tea", "Vegetables", "Fruits", "Spices"];
 
 const SignUp = () => {
   const [name, setName] = useState("");
+  const[email,setEmail] = useState("");
   const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
@@ -25,10 +26,11 @@ const SignUp = () => {
 
     axios.post("http://localhost:8080/api/v1/adduser", {
       name,
+      email,
       location,
       phone,
       password,
-      farmingTypes
+      farming:farmingTypes.join(",")
     }, {
       headers: {
         'Content-Type': 'application/json'
@@ -51,15 +53,23 @@ const SignUp = () => {
           <input
             type="text"
             placeholder="Name"
-            className="w-full border rounded-lg px-4 py-2"
+            className="w-full border border-green-400 rounded-lg px-4 py-2"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
           <input
+            type="email"
+            placeholder="email"
+            className="w-full border border-green-400 rounded-lg px-4 py-2"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
             type="text"
             placeholder="Location"
-            className="w-full border rounded-lg px-4 py-2"
+            className="w-full border border-green-400 rounded-lg px-4 py-2"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             required
@@ -67,7 +77,7 @@ const SignUp = () => {
           <input
             type="tel"
             placeholder="Phone Number"
-            className="w-full border rounded-lg px-4 py-2"
+            className="w-full border border-green-400 rounded-lg px-4 py-2"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
@@ -75,7 +85,7 @@ const SignUp = () => {
           <input
             type="password"
             placeholder="Password"
-            className="w-full border rounded-lg px-4 py-2"
+            className="w-full border border-green-400 rounded-lg px-4 py-2"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -84,7 +94,7 @@ const SignUp = () => {
             <p className="mb-2 font-medium">Farming Types:</p>
             <div className="flex flex-wrap gap-3">
               {farmingOptions.map((type) => (
-                <label key={type} className="flex items-center space-x-2">
+                <label key={type} className="flex  items-center space-x-2">
                   <input
                     type="checkbox"
                     value={type}
