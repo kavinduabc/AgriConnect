@@ -50,6 +50,7 @@ const FarmerPortal = () => {
                 <h1 className='text-[20px] text-green-800 font-bold '>Recent Activity</h1>
                 <div className='flex flex-col mx-3'>
                     <div className='shadow-md p-2 rounded-lg text-green-700'>
+                       
                         <h3 className='text-[17px]'>New inquiry for Tea Leaves</h3>
                         <p className='text-[13px] '>Hotel Cinamon  Grand</p>
                     </div>
