@@ -6,6 +6,7 @@ import Footer from "./component/Footer";
 import FarmerPortal from "./pages/portals/FarmerPortal";
 
 import './App.css';
+import Login from "./pages/SignUp/Login";
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signupFarmer" element={<Signup />} />
           <Route path="/farmer" element={<FarmerPortal />} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
 
         <hr className="text-green-50" />
